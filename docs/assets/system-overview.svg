@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Hermes Kurultai public template system overview</title>
+<desc id="desc">Diagram showing operator, Hermes runtime, profiles, Kanban, cron, Brain, receipts, and private boundary.</desc>
+<rect width="1200" height="620" fill="#0b1020"/>
+<style>.h{font:700 28px system-ui;fill:#f8fafc}.t{font:500 18px system-ui;fill:#dbeafe}.s{font:400 14px system-ui;fill:#a7b4d6}.box{fill:#111a33;stroke:#60a5fa;stroke-width:2;rx:18}.safe{fill:#102a1f;stroke:#34d399}.priv{fill:#2a1420;stroke:#fb7185}.arrow{stroke:#93c5fd;stroke-width:3;fill:none;marker-end:url(#m)}</style>
+<defs><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#93c5fd"/></marker></defs>
+<text x="60" y="60" class="h">Hermes Kurultai Public Template</text>
+<text x="60" y="92" class="s">Rebuild contract: public templates + private local restore inputs</text>
+<rect x="60" y="140" width="210" height="120" class="box"/><text x="90" y="185" class="t">Operator</text><text x="90" y="215" class="s">approvals • goals</text>
+<rect x="360" y="120" width="250" height="160" class="box"/><text x="400" y="170" class="t">Hermes Runtime</text><text x="400" y="200" class="s">providers • tools • policy</text><text x="400" y="226" class="s">context • redaction</text>
+<rect x="710" y="95" width="390" height="210" class="box"/><text x="750" y="145" class="t">Profiles</text><text x="750" y="178" class="s">chair • builder • reviewer • ops</text><text x="750" y="204" class="s">researcher • memory</text><text x="750" y="240" class="s">role-scoped tools and instructions</text>
+<rect x="80" y="390" width="250" height="130" class="safe" rx="18"/><text x="120" y="438" class="t">Brain Schema</text><text x="120" y="468" class="s">wiki templates • lint rules</text>
+<rect x="430" y="385" width="280" height="140" class="safe" rx="18"/><text x="470" y="435" class="t">Coordination</text><text x="470" y="465" class="s">Kanban • cron • receipts</text><text x="470" y="491" class="s">canaries • recovery</text>
+<rect x="810" y="375" width="300" height="165" class="priv" rx="18"/><text x="850" y="425" class="t">Local Private Inputs</text><text x="850" y="455" class="s">secrets • live Brain • sessions</text><text x="850" y="481" class="s">delivery targets • auth</text><text x="850" y="507" class="s">never committed</text>
+<path d="M270 200 C310 200 320 200 360 200" class="arrow"/><path d="M610 200 C650 200 670 200 710 200" class="arrow"/><path d="M490 280 C430 330 310 360 220 390" class="arrow"/><path d="M535 280 C550 320 560 350 570 385" class="arrow"/><path d="M850 375 C800 330 720 290 610 240" class="arrow"/>
+<text x="60" y="585" class="s">Public repo: source, docs, sanitized manifests. Private restore: credentials, raw memory, live delivery state.</text>
+</svg>

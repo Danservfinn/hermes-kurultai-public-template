@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "5bb06f714f5a",
+    "name": "brain-wiki-weekly-lint",
+    "schedule": {
+      "display": "0 18 * * 0",
+      "expr": "0 18 * * 0",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 5,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "brain-wiki-operations"
+    ],
+    "deliver": "local"
+  },
+  {
+    "id": "7b72703dc472",
+    "name": "hermes-quota-daily-check",
+    "schedule": {
+      "display": "0 8 * * *",
+      "expr": "0 8 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 37,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "deliver": "local"
+  },
+  {
+    "id": "14ab808fd7a4",
+    "name": "brain-sync-drain",
+    "schedule": {
+      "display": "0 */6 * * *",
+      "expr": "0 */6 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 145,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "deliver": "local"
+  },
+  {
+    "id": "c01c8cd1e0bc",
+    "name": "agent-system-daily-queue-action",
+    "schedule": {
+      "display": "0 9 * * *",
+      "expr": "0 9 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 48,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "agent-system-operations"
+    ],
+    "deliver": "local"
+  },
+  {
+    "id": "ef6c8c68ad7c",
+    "name": "brain-ingest-hourly",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 737,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "brain-wiki-operations",
+      "agent-system-retro-learn"
+    ],
+    "enabled_toolsets": [
+      "file",
+      "terminal",
+      "skills",
+      "session_search"
+    ],
+    "deliver": "local",
+    "context_from": [
+      "14ab808fd7a4"
+    ]
+  },
+  {
+    "id": "[REDACTED]",
+    "name": "agent-system-terminal-task-notifier",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 8852,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "deliver": "local"
+  },
+  {
+    "id": "2607a2789990",
+    "name": "brain-graphify-weekly-refresh",
+    "schedule": {
+      "display": "30 8 * * 1",
+      "expr": "30 8 * * 1",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 4,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "brain-wiki-operations"
+    ],
+    "deliver": "local"
+  },
+  {
+    "id": "agent-system-signal-intake-daily",
+    "name": "agent-system-signal-intake-every-60m",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "deliver": "local"
+  },
+  {
+    "id": "agent-system-signal-feedback-apply",
+    "name": "agent-system-signal-feedback-apply",
+    "schedule": {
+      "display": "0 20 * * *",
+      "expr": "0 20 * * *",
+      "kind": "cron"
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "deliver": "local"
+  },
+  {
+    "id": "agent-system-signal-weekly-metrics",
+    "name": "agent-system-signal-weekly-metrics",
+    "schedule": {
+      "display": "0 9 * * 1",
+      "expr": "0 9 * * 1",
+      "kind": "cron"
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "deliver": "local"
+  },
+  {
+    "id": "c0dcb8edbbb7",
+    "name": "brain-optimizer-weekly",
+    "schedule": {
+      "display": "0 9 * * 0",
+      "expr": "0 9 * * 0",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 3,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [
+      "brain-wiki-operations"
+    ],
+    "enabled_toolsets": [
+      "terminal",
+      "file",
+      "skills"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "b90907649d1e",
+    "name": "agent-system-research-hourly-summary",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 565,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "1091f6b0614b",
+    "name": "hermes-soul-operating-contract-monthly-audit",
+    "schedule": {
+      "display": "0 10 1 * *",
+      "expr": "0 10 1 * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 1,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [
+      "agent-system-operations"
+    ],
+    "enabled_toolsets": [
+      "terminal",
+      "file",
+      "skills",
+      "cronjob",
+      "session_search"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "e6d26c53014e",
+    "name": "brain-content-daily-brief",
+    "schedule": {
+      "display": "0 6 * * *",
+      "expr": "0 6 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 23,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "brain-wiki-operations",
+      "content-os-workflows"
+    ],
+    "enabled_toolsets": [
+      "file",
+      "terminal",
+      "skills",
+      "session_search"
+    ],
+    "workdir": null,
+    "deliver": "origin",
+    "context_from": [
+      "b90907649d1e"
+    ]
+  },
+  {
+    "id": "8ffe58fe3e16",
+    "name": "brain-vault-weekly-synthesis",
+    "schedule": {
+      "display": "0 9 * * 0",
+      "expr": "0 9 * * 0",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 3,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "brain-wiki-operations"
+    ],
+    "enabled_toolsets": [
+      "file",
+      "terminal",
+      "web",
+      "skills"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": [
+      "agent-system-signal-weekly-metrics",
+      "2607a2789990",
+      "e6d26c53014e"
+    ]
+  },
+  {
+    "id": "4500a64f8da1",
+    "name": "polymarket-weather-paper-scan",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 545,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "cd970d242675",
+    "name": "polymarket-weather-labeler-and-render",
+    "schedule": {
+      "display": "every 360m",
+      "kind": "interval",
+      "minutes": 360
+    },
+    "repeat": {
+      "completed": 79,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "414cdf604452",
+    "name": "subc-room-walk-v0",
+    "schedule": {
+      "display": "0 */6 * * *",
+      "expr": "0 */6 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 79,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "file",
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "1fc07abc10a5",
+    "name": "subc-digest-v0",
+    "schedule": {
+      "display": "0 6,12,18 * * *",
+      "expr": "0 6,12,18 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 60,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "file",
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "5f62f75e60e6",
+    "name": "kaidu-prompt-lab-review",
+    "schedule": {
+      "display": "0 8 * * *",
+      "expr": "0 8 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 21,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "2234e4abdcf5",
+    "name": "fantasy-sumo-live-ingestion",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 425,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": "${HOME}/fantasy-sumo-league-site",
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "e1e736de17cb",
+    "name": "kanban-health-monitor",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 397,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "f71e5762a52b",
+    "name": "brain-docs-hygiene-monthly",
+    "schedule": {
+      "display": "0 9 1 * *",
+      "expr": "0 9 1 * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 0,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "ea94a9a31f1d",
+    "name": "monitor-first-action-learning-loop-integration",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 38,
+      "times": 144
+    },
+    "enabled": false,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal",
+      "file",
+      "skills",
+      "cronjob"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "2ef6fa104ae1",
+    "name": "monitor-agi-harness-v0-autonomous-implementation",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 77,
+      "times": 96
+    },
+    "enabled": false,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "e231ee16d0cf",
+    "name": "daily-token-efficiency-capability-proposal",
+    "schedule": {
+      "display": "35 7 * * *",
+      "expr": "35 7 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 17,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": "${HOME}/.hermes/hermes-agent",
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "26ecf017655d",
+    "name": "kanban-crash-investigator",
+    "schedule": {
+      "display": "every 1m",
+      "kind": "interval",
+      "minutes": 1
+    },
+    "repeat": {
+      "completed": 16979,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "8ead173174ff",
+    "name": "brain-dreamer-v0",
+    "schedule": {
+      "display": "every 5m",
+      "kind": "interval",
+      "minutes": 5
+    },
+    "repeat": {
+      "completed": 3,
+      "times": null
+    },
+    "enabled": false,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "0765e71fb80a",
+    "name": "brain-dreamer-frontier-review",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 314,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "brain-wiki-operations"
+    ],
+    "enabled_toolsets": [
+      "terminal",
+      "file",
+      "skills",
+      "session_search"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "4f5701762419",
+    "name": "agi-caretaker-scorecard",
+    "schedule": {
+      "display": "every 360m",
+      "kind": "interval",
+      "minutes": 360
+    },
+    "repeat": {
+      "completed": 56,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "e644df487abe",
+    "name": "dreamer-learn-rules",
+    "schedule": {
+      "display": "0 */6 * * *",
+      "expr": "0 */6 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 56,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "aebdf7b5a82d",
+    "name": "dreamer-promotion-adapter",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 307,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "8aa1898e845e",
+    "name": "agent-health-monitor",
+    "schedule": {
+      "display": "every 360m",
+      "kind": "interval",
+      "minutes": 360
+    },
+    "repeat": {
+      "completed": 55,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "4d0c4a27f6fd",
+    "name": "buildroom-autonomy-cycle",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 60,
+      "display": "every 60m"
+    },
+    "repeat": {
+      "completed": 217,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": "[REDACTED]",
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "ea120d54fc87",
+    "name": "buildroom-freshness-canary",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 278,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": "[REDACTED]",
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "6bda5c98f09d",
+    "name": "gateway-responsiveness-canary",
+    "schedule": {
+      "display": "every 5m",
+      "kind": "interval",
+      "minutes": 5
+    },
+    "repeat": {
+      "completed": 2771,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "c366bbd4c9c3",
+    "name": "dreamer-watchdog-silent",
+    "schedule": {
+      "display": "every 5m",
+      "kind": "interval",
+      "minutes": 5
+    },
+    "repeat": {
+      "completed": 2561,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "f6bc0160cf7d",
+    "name": "tailnet-health-canary",
+    "schedule": {
+      "display": "every 15m",
+      "kind": "interval",
+      "minutes": 15
+    },
+    "repeat": {
+      "completed": 935,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "68f97bbc5ecf",
+    "name": "tmux-session-canary",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 247,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "c86916b111cc",
+    "name": "cross-device-foundation-canary",
+    "schedule": {
+      "display": "every 15m",
+      "kind": "interval",
+      "minutes": 15
+    },
+    "repeat": {
+      "completed": 935,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "bfae9a6fd06c",
+    "name": "brain-sync-canary-silent",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 482,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "2613e5301d70",
+    "name": "ops-repo-drift-canary-silent",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 484,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "54b33e97b6b2",
+    "name": "hermes-atlas-newsletter-monitor",
+    "schedule": {
+      "display": "0 13 * * *",
+      "expr": "0 13 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 11,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "web",
+      "terminal",
+      "file"
+    ],
+    "workdir": "${HOME}/brain",
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "638a60cd6b3b",
+    "name": "weather-strategy-lab-caretaker",
+    "schedule": {
+      "display": "every 360m",
+      "kind": "interval",
+      "minutes": 360
+    },
+    "repeat": {
+      "completed": 41,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [
+      "polymarket-weather-paper-engine"
+    ],
+    "enabled_toolsets": [
+      "terminal",
+      "file"
+    ],
+    "workdir": "${HOME}/polymarket-weather-edge",
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "c90fcadcbcf7",
+    "name": "batu-x-watchlist-scout",
+    "schedule": {
+      "display": "every 360m",
+      "kind": "interval",
+      "minutes": 360
+    },
+    "repeat": {
+      "completed": 39,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "e81f0f8c0845",
+    "name": "batu-x-watchlist-research-dispatch",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 442,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "7fde43715bf1",
+    "name": "batu-x-bookmark-scout",
+    "schedule": {
+      "display": "every 60m",
+      "kind": "interval",
+      "minutes": 60
+    },
+    "repeat": {
+      "completed": 222,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "84bb4ef0143a",
+    "name": "batu-x-bookmark-research-dispatch",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 440,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "646beb59eb33",
+    "name": "batu-grok-x-research-canary",
+    "schedule": {
+      "display": "25 7 * * *",
+      "expr": "25 7 * * *",
+      "kind": "cron"
+    },
+    "repeat": {
+      "completed": 10,
+      "times": null
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "9a47bca7a1ec",
+    "name": "cron-human-intervention-watchdog",
+    "schedule": {
+      "display": "every 30m",
+      "kind": "interval",
+      "minutes": 30
+    },
+    "repeat": {
+      "completed": 402,
+      "times": 999999
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "d8622ed0cd2b",
+    "name": "buildroom-review-gate-monitor",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 30,
+      "display": "every 30m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 402
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": "[REDACTED]",
+    "profile": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "e0fc633a6450",
+    "name": "ogedei-orchestrator-canary",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 30,
+      "display": "every 30m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 400
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "0f51ef378885",
+    "name": "ogedei-orchestrator-optimizer",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 360,
+      "display": "every 360m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 36
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "24d0dba4ebc5",
+    "name": "kanban-performance-metrics",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 360,
+      "display": "every 360m"
+    },
+    "repeat": {
+      "times": 999999,
+      "completed": 35
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "61df01d9de76",
+    "name": "batu-x-signal-research-dispatch",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 30,
+      "display": "every 30m"
+    },
+    "repeat": {
+      "times": 999999,
+      "completed": 360
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "3794c22e322b",
+    "name": "research-proposal-compiler",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 360,
+      "display": "every 360m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 31
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "4243ab190364",
+    "name": "research-control-room",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 180,
+      "display": "every 180m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 64
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "264fdb82c7c2",
+    "name": "kanban-jam-classifier",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 1,
+      "display": "every 1m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 9331
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "5ec8d78ce135",
+    "name": "operator-x-bookmark-taste-profile",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 360,
+      "display": "every 360m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 29
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "f3636ffcb192",
+    "name": "agi-harness-observe-propose",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 60,
+      "display": "every 60m"
+    },
+    "repeat": {
+      "times": 999999,
+      "completed": 143
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "local",
+    "context_from": null
+  },
+  {
+    "id": "37fb092d8f91",
+    "name": "product production quiet canary",
+    "schedule": {
+      "kind": "cron",
+      "expr": "*/30 * * * *",
+      "display": "*/30 * * * *"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 187
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "7552126f0f18",
+    "name": "product admin anomaly watchdog",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 60,
+      "display": "every 60m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 62
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "4ec36a6e7238",
+    "name": "product admin daily digest",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 9 * * *",
+      "display": "0 9 * * *"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 3
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "7256c7f1e973",
+    "name": "product business state morning report",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 8 * * *",
+      "display": "0 8 * * *"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 3
+    },
+    "enabled": true,
+    "skills": [
+      "product-business-state-report",
+      "product-admin-operations"
+    ],
+    "enabled_toolsets": [
+      "terminal",
+      "file",
+      "web"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "f6d34706480e",
+    "name": "product support email monitor",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 15,
+      "display": "every 15m"
+    },
+    "repeat": {
+      "times": 999999,
+      "completed": 228
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "a93cbb3347e3",
+    "name": "product paid subscription purchase alert",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 1,
+      "display": "every 1m"
+    },
+    "repeat": {
+      "times": 999999,
+      "completed": 2806
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "4d9379553948",
+    "name": "Objective Runner autonomous tick",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 10,
+      "display": "every 10m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 260
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": [
+      "terminal"
+    ],
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  },
+  {
+    "id": "e37e704aa505",
+    "name": "Dreamer Kanban triage gate",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 30,
+      "display": "every 30m"
+    },
+    "repeat": {
+      "times": null,
+      "completed": 74
+    },
+    "enabled": true,
+    "skills": [],
+    "enabled_toolsets": null,
+    "workdir": null,
+    "profile": null,
+    "deliver": "origin",
+    "context_from": null
+  }
+]

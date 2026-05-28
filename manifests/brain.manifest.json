@@ -1,0 +1,16 @@
+{
+  "root": "${BRAIN_ROOT}",
+  "public_repo_policy": "schema/templates/runbooks only; live pages, raw captures, private indexes, and private-tier material are not public artifacts",
+  "live_source_counts_redacted": {
+    "entities": 8,
+    "projects": 48,
+    "infrastructure": 24,
+    "concepts": 35,
+    "analyses": 224,
+    "raw": 5146,
+    "docs": 156,
+    "synthesis": 45285,
+    "private-tier": 164
+  },
+  "schema_source": "derived from live Brain operating conventions, generalized for public replication"
+}

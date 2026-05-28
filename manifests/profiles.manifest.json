@@ -1,0 +1,68 @@
+[
+  {
+    "name": "batu",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "chagatai",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "coder",
+    "has_soul": false,
+    "has_config": false,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "codex",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "jochi",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "operator-profile",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "mongke",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "ogedei",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "subc",
+    "has_soul": true,
+    "has_config": false,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "temujin",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  },
+  {
+    "name": "tolui",
+    "has_soul": true,
+    "has_config": true,
+    "purpose": "see docs/profiles.md; identity text is private and should be recreated locally"
+  }
+]

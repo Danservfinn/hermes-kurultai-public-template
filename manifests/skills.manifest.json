@@ -1,0 +1,570 @@
+[
+  {
+    "path": "apple/apple-notes",
+    "description": "Manage Apple Notes via memo CLI: create, search, edit."
+  },
+  {
+    "path": "apple/apple-reminders",
+    "description": "Apple Reminders via remindctl: add, list, complete."
+  },
+  {
+    "path": "apple/findmy",
+    "description": "Track Apple devices/AirTags via FindMy.app on macOS."
+  },
+  {
+    "path": "apple/imessage",
+    "description": "Send and receive iMessages/SMS via the imsg CLI on macOS."
+  },
+  {
+    "path": "apple/macos-computer-use",
+    "description": "|"
+  },
+  {
+    "path": "autonomous-ai-agents/claude-code",
+    "description": "Delegate coding to Claude Code CLI (features, PRs)."
+  },
+  {
+    "path": "autonomous-ai-agents/codex",
+    "description": "Delegate coding tasks to OpenAI Codex CLI agent. Use for building features, refactoring, PR reviews, batch issue fixing, and debugging Hermes Kanban codex worker startup/profile/auth crashes. Requires the codex CLI and a git repository. See…"
+  },
+  {
+    "path": "autonomous-ai-agents/hermes-agent",
+    "description": "Compact router for using and extending Hermes Agent — load when configuring, troubleshooting, developing, or operating Hermes. The full historical reference is preserved in references/full-hermes-agent-reference-2026-05-15.md; load only the…"
+  },
+  {
+    "path": "autonomous-ai-agents/kanban-codex-lane",
+    "description": "Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff."
+  },
+  {
+    "path": "autonomous-ai-agents/opencode",
+    "description": "Delegate coding to OpenCode CLI (features, PR review)."
+  },
+  {
+    "path": "business/go-to-market-planning",
+    "description": "Create executable go-to-market plans with autonomous operating loops, ICP, channels, metrics, and approval gates."
+  },
+  {
+    "path": "business/product-admin-operations",
+    "description": "Operate product as an autonomous admin surface: support intake, account resolution, API keys, entitlements, billing/payment triage, admin receipts, and escalation policy."
+  },
+  {
+    "path": "business/product-business-state-report",
+    "description": "Produce operator's detailed morning report on the state of the product / productthis.ai business from live admin, support, billing, product, and operations signals."
+  },
+  {
+    "path": "business/product-subscription-attribution",
+    "description": "Attribute product subscription tiers to email addresses/users on operator's command, including custom pricing, $0 grants, and free trial/free-period overrides."
+  },
+  {
+    "path": "business/stripe",
+    "description": "Stripe REST API workflows for customers, payments, subscriptions, refunds, and churn research with strict side-effect gates."
+  },
+  {
+    "path": "creative/architecture-diagram",
+    "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML."
+  },
+  {
+    "path": "creative/ascii-art",
+    "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii."
+  },
+  {
+    "path": "creative/ascii-video",
+    "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF."
+  },
+  {
+    "path": "creative/baoyu-article-illustrator",
+    "description": "Article illustrations: type × style × palette consistency."
+  },
+  {
+    "path": "creative/baoyu-comic",
+    "description": "Knowledge comics (知识漫画): educational, biography, tutorial."
+  },
+  {
+    "path": "creative/baoyu-infographic",
+    "description": "Infographics: 21 layouts x 21 styles (信息图, 可视化)."
+  },
+  {
+    "path": "creative/claude-design",
+    "description": "Design one-off HTML artifacts (landing, deck, prototype)."
+  },
+  {
+    "path": "creative/comfyui",
+    "description": "Generate images, video, and audio with ComfyUI — install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution."
+  },
+  {
+    "path": "creative/creative-ideation",
+    "description": "Generate project ideas via creative constraints."
+  },
+  {
+    "path": "creative/design-md",
+    "description": "Author/validate/export Google's DESIGN.md token spec files."
+  },
+  {
+    "path": "creative/excalidraw",
+    "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)."
+  },
+  {
+    "path": "creative/humanizer",
+    "description": "Humanize text: strip AI-isms and add real voice."
+  },
+  {
+    "path": "creative/manim-video",
+    "description": "Manim CE animations: 3Blue1Brown math/algo videos."
+  },
+  {
+    "path": "creative/p5js",
+    "description": "p5.js sketches: gen art, shaders, interactive, 3D."
+  },
+  {
+    "path": "creative/pixel-art",
+    "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8)."
+  },
+  {
+    "path": "creative/popular-web-designs",
+    "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS, plus curated references for broadcast/editorial style cues."
+  },
+  {
+    "path": "creative/pretext",
+    "description": "[REDACTED]"
+  },
+  {
+    "path": "creative/sketch",
+    "description": "Throwaway HTML mockups: 2-3 design variants to compare."
+  },
+  {
+    "path": "creative/songwriting-and-ai-music",
+    "description": "Songwriting craft and Suno AI music prompts."
+  },
+  {
+    "path": "creative/touchdesigner-mcp",
+    "description": "Control a running TouchDesigner instance via twozero MCP — create operators, set parameters, wire connections, execute Python, build real-time visuals. 36 native tools."
+  },
+  {
+    "path": "data-science/jupyter-live-kernel",
+    "description": "Iterative Python via live Jupyter kernel (hamelnb)."
+  },
+  {
+    "path": "devops/hermes-cron-optimization",
+    "description": "Manage, measure, and reduce Hermes cron job token usage while preserving capability and safety."
+  },
+  {
+    "path": "devops/kanban-interruption-handoff",
+    "description": "Preserve interrupted, preempted, blocked, or concurrent work by routing it into Hermes Kanban tasks with context, receipts, exact completion reporting, and active blocker resolution."
+  },
+  {
+    "path": "devops/kanban-orchestrator",
+    "description": "Decomposition playbook + specialist-roster conventions + anti-temptation rules for an orchestrator profile routing work through Kanban. The \"don't do the work yourself\" rule and the basic lifecycle are auto-injected into every kanban worker…"
+  },
+  {
+    "path": "devops/kanban-plan-shepherding",
+    "description": "Use when operator asks to send an implementation plan, recommendation bundle, or multi-task proposal to Hermes Kanban triage and shepherd it through. Convert the plan into native triage rows, preserve safety boundaries, verify task IDs, dis…"
+  },
+  {
+    "path": "devops/kanban-task-lifecycle",
+    "description": "Use when deciding whether work should become a Hermes Kanban task, choosing the right agent-system assignee, dispatching it, monitoring it to completion, and actively managing blockers or follow-up work. For live task health checks and dead…"
+  },
+  {
+    "path": "devops/kanban-worker",
+    "description": "Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is auto-injected into every worker's system prompt as KANBAN_GUIDANCE (from agent/prompt_builder.py); this skill is what you load when you want deeper detail…"
+  },
+  {
+    "path": "devops/webhook-subscriptions",
+    "description": "Webhook subscriptions: event-driven agent runs."
+  },
+  {
+    "path": "devops/x402-payment-address-lookup",
+    "description": "Find and verify an x402 payment deposit/payTo address safely, without exposing private keys or secrets."
+  },
+  {
+    "path": "dogfood",
+    "description": "Exploratory QA of web apps: find bugs, evidence, reports."
+  },
+  {
+    "path": "email/himalaya",
+    "description": "Himalaya CLI: IMAP/SMTP email from terminal."
+  },
+  {
+    "path": "gaming/minecraft-modpack-server",
+    "description": "Host modded Minecraft servers (CurseForge, Modrinth)."
+  },
+  {
+    "path": "gaming/pokemon-player",
+    "description": "Play Pokemon via headless emulator + RAM reads."
+  },
+  {
+    "path": "github/codebase-inspection",
+    "description": "Inspect codebases w/ pygount: LOC, languages, ratios."
+  },
+  {
+    "path": "github/github-auth",
+    "description": "GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login."
+  },
+  {
+    "path": "github/github-code-review",
+    "description": "Review PRs: diffs, inline comments via gh or REST."
+  },
+  {
+    "path": "github/github-issues",
+    "description": "Create, triage, label, assign GitHub issues via gh or REST."
+  },
+  {
+    "path": "github/github-pr-workflow",
+    "description": "GitHub PR lifecycle: branch, commit, open, CI, merge."
+  },
+  {
+    "path": "github/github-repo-management",
+    "description": "Clone/create/fork repos; manage remotes, releases. For requests to house live runtime configuration or rebuild contracts in a repo, use the sanitized-template/manifest pattern in `references/sanitized-runtime-config-housing.md` and the rebu…"
+  },
+  {
+    "path": "agent-system/brain-media-doc-intake",
+    "description": "Save media, documents, screenshots, PDFs, and supporting files into the Brain with privacy routing, manifests, local-only Kanban delegation, indexing policy, and verification."
+  },
+  {
+    "path": "agent-system/brain-report-ingest-propose",
+    "description": "Report/link intake for brain synthesis and proposal packets."
+  },
+  {
+    "path": "agent-system/brain-wiki-operations",
+    "description": "Operate and maintain operator's brain wiki: context, search, save, ingest, sync, research, fold/archive, graph/API maintenance, and skill parity."
+  },
+  {
+    "path": "agent-system/brain-wiki-references",
+    "description": "On-demand reference appendix for brain-wiki-operations: detailed Brain ingest/Dreamer/QMD/product-screening runbook pointers. Load only when a specific edge case is needed."
+  },
+  {
+    "path": "agent-system/buildroom-operations",
+    "description": "Operate and extend agent-system buildrooms: research-to-buildroom compilation, room validation, operator summaries, Control Room reports, receipts, tests, leakage scans, and PR-safe public artifacts."
+  },
+  {
+    "path": "agent-system/content-os-workflows",
+    "description": "Operate operator's Content OS end-to-end: inbox processing, connection mining, brief generation, drafting, return path, and performance review."
+  },
+  {
+    "path": "agent-system/fantasy-sumo-operations",
+    "description": "Operate, extend, and deploy the fantasy sumo league site"
+  },
+  {
+    "path": "agent-system/fantasy-sumo-spoiler-fence",
+    "description": ">"
+  },
+  {
+    "path": "agent-system/agent-system-agent-health",
+    "description": "Monitor agent-system agent profile health: session activity, error rates, model config, cron status. Cross-profile visibility into all 6 agents."
+  },
+  {
+    "path": "agent-system/agent-system-operations",
+    "description": "Operate, diagnose, and improve agent-system/OpenClaw: queues, runtime config housing (see `references/runtime-config-repo-housing.md`), routing, proposals, caretaker/improver loops, auth/rate limits, dashboards, and model policy."
+  },
+  {
+    "path": "agent-system/agent-system-retro-learn",
+    "description": "Run a post-task retro/learn pass that compiles meaningful work into memory, skills, Brain doctrine, Kanban follow-up, receipts, regressions, canaries, or explicit no-op rationale."
+  },
+  {
+    "path": "agent-system/openclaw-operations",
+    "description": "Configure, upgrade, and debug OpenClaw/Hermes integration surfaces including [REDACTED] channels, product screening cleanup, CLI/gateway upgrades, and imported helper workflows."
+  },
+  {
+    "path": "agent-system/research-return-path",
+    "description": "Default workflow for turning operator-requested article/media/social research into reusable outputs: Brain artifacts, content angles, doctrine, proposals, skills, Kanban tasks, or explicit no-op decisions."
+  },
+  {
+    "path": "agent-system/research-to-brain-compiler",
+    "description": "Workflow for turning high-signal user-requested research into reusable Brain artifacts rather than leaving it only in chat history."
+  },
+  {
+    "path": "agent-system/skill-library-operations",
+    "description": "Author, install, consolidate, and propagate agent skills across Hermes, Codex, Claude, OpenClaw, and the brain wiki skill-parity layer."
+  },
+  {
+    "path": "mcp/native-mcp",
+    "description": "MCP client: connect servers, register tools (stdio/HTTP)."
+  },
+  {
+    "path": "media/gif-search",
+    "description": "Search/download GIFs from Tenor via curl + jq."
+  },
+  {
+    "path": "media/heartmula",
+    "description": "HeartMuLa: Suno-like song generation from lyrics + tags."
+  },
+  {
+    "path": "media/songsee",
+    "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI."
+  },
+  {
+    "path": "media/spotify",
+    "description": "Spotify: play, search, queue, manage playlists and devices."
+  },
+  {
+    "path": "media/youtube-content",
+    "description": "YouTube transcripts to summaries, threads, blogs."
+  },
+  {
+    "path": "mlops/evaluation/lm-evaluation-harness",
+    "description": "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.)."
+  },
+  {
+    "path": "mlops/evaluation/weights-and-biases",
+    "description": "W&B: log ML experiments, sweeps, model registry, dashboards."
+  },
+  {
+    "path": "mlops/huggingface-hub",
+    "description": "HuggingFace hf CLI: search/download/upload models, datasets."
+  },
+  {
+    "path": "mlops/inference/llama-cpp",
+    "description": "llama.cpp local GGUF inference + HF Hub model discovery."
+  },
+  {
+    "path": "mlops/inference/obliteratus",
+    "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means)."
+  },
+  {
+    "path": "mlops/inference/outlines",
+    "description": "Outlines: structured JSON/regex/Pydantic LLM generation."
+  },
+  {
+    "path": "mlops/inference/vllm",
+    "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization."
+  },
+  {
+    "path": "mlops/models/audiocraft",
+    "description": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound."
+  },
+  {
+    "path": "mlops/models/segment-anything",
+    "description": "SAM: zero-shot image segmentation via points, boxes, masks."
+  },
+  {
+    "path": "mlops/research/dspy",
+    "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG."
+  },
+  {
+    "path": "mlops/training/axolotl",
+    "description": "Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO)."
+  },
+  {
+    "path": "mlops/training/trl-fine-tuning",
+    "description": "TRL: SFT, DPO, PPO, GRPO, reward modeling for LLM RLHF."
+  },
+  {
+    "path": "mlops/training/unsloth",
+    "description": "Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM."
+  },
+  {
+    "path": "note-taking/obsidian",
+    "description": "Read, search, create, and edit notes in the Obsidian vault."
+  },
+  {
+    "path": "note-taking/obsidian-workflows",
+    "description": "Create and maintain Obsidian vault artifacts: CLI operations, Markdown conventions, Bases views, JSON Canvas maps, and clean imported documents."
+  },
+  {
+    "path": "openclaw-imports/operator-profile-task-workflows",
+    "description": "Build, route, and report operator-profile/agent-system task packets optimized for agent-aware execution and completion reporting."
+  },
+  {
+    "path": "productivity/agent-led-call-planning",
+    "description": "Use when operator asks operator-profile/Hermes to call a human for a purpose. Build an objective-led call plan before dialing, lead the conversation toward that outcome, collect only consented necessary facts, and close with receipts/follow…"
+  },
+  {
+    "path": "productivity/airtable",
+    "description": "Airtable REST API via curl. Records CRUD, filters, upserts."
+  },
+  {
+    "path": "productivity/copy-pasteable-code-blocks",
+    "description": "Use when writing copy-pasteable prompts, commands, patches, Markdown, or chat messages that contain code blocks, especially when the output will be pasted into [REDACTED], Slack, Discord, another LLM, or a terminal. Prevent broken nested fe…"
+  },
+  {
+    "path": "productivity/google-workspace",
+    "description": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python."
+  },
+  {
+    "path": "productivity/granola-fathom",
+    "description": "Import and process meeting transcripts/notes from Granola and Fathom exports or APIs, then fold into Brain/meeting pipelines."
+  },
+  {
+    "path": "productivity/linear",
+    "description": "Linear: manage issues, projects, teams via GraphQL + curl."
+  },
+  {
+    "path": "productivity/maps",
+    "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM."
+  },
+  {
+    "path": "productivity/nano-pdf",
+    "description": "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts)."
+  },
+  {
+    "path": "productivity/notion",
+    "description": "Notion API + ntn CLI: pages, databases, markdown, Workers."
+  },
+  {
+    "path": "productivity/ocr-and-documents",
+    "description": "Extract text from PDFs/scans (pymupdf, marker-pdf)."
+  },
+  {
+    "path": "productivity/powerpoint",
+    "description": "Create, read, edit .pptx decks, slides, notes, templates."
+  },
+  {
+    "path": "productivity/premortem",
+    "description": "Use when the user asks to premortem, stress-test, red-team, de-risk, or future-failure-analyze a plan, decision, launch, hire, partnership, project, commitment, or strategy before execution."
+  },
+  {
+    "path": "productivity/raleigh-sauna-house-booking",
+    "description": "Use when operator asks to book a Raleigh Sauna House appointment for a given date/time; navigate Boulevard booking, optionally use SMS login code, and stop before final appointment submission for approval."
+  },
+  {
+    "path": "productivity/readwise",
+    "description": "Readwise Reader/highlights API workflows for search, export, and retrieval with safe token handling."
+  },
+  {
+    "path": "productivity/teams-meeting-pipeline",
+    "description": "Operate the Teams meeting summary pipeline via Hermes CLI — summarize meetings, inspect pipeline status, replay jobs, manage Microsoft Graph subscriptions."
+  },
+  {
+    "path": "productivity/telephony-voice-agents",
+    "description": "Set up and operate phone/SMS/AI voice agent integrations with [REDACTED], ElevenLabs, Vapi, Bland, and Hermes/operator-profile bridge services."
+  },
+  {
+    "path": "red-teaming/godmode",
+    "description": "Jailbreak LLMs: productltongue, GODMODE, ULTRAPLINIAN."
+  },
+  {
+    "path": "research/apify",
+    "description": "Apify actor/dataset workflows for scraping and market research with cost and side-effect dry-run gates."
+  },
+  {
+    "path": "research/arxiv",
+    "description": "Search arXiv papers by keyword, author, category, or ID."
+  },
+  {
+    "path": "research/blogwatcher",
+    "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool."
+  },
+  {
+    "path": "research/llm-wiki",
+    "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB."
+  },
+  {
+    "path": "research/polymarket",
+    "description": "Query Polymarket: markets, prices, orderbooks, history."
+  },
+  {
+    "path": "research/polymarket-weather-paper-engine",
+    "description": "Operate and evaluate operator's paper-only Polymarket daily temperature research engine, including simulated portfolio, training export, and goal tuning."
+  },
+  {
+    "path": "research/research-paper-writing",
+    "description": "End-to-end pipeline for writing ML/AI research papers — experiment design through submission. Covers NeurIPS, ICML, ICLR, ACL, AAAI, COLM."
+  },
+  {
+    "path": "smart-home/openhue",
+    "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI."
+  },
+  {
+    "path": "smart-home/tesla-fleet-api",
+    "description": "Read-only Tesla Fleet API workflows for OAuth setup, vehicle inventory, and vehicle-data monitoring without control commands or secret leakage."
+  },
+  {
+    "path": "social-media/reddit",
+    "description": "Reddit public/OAuth research and account workflows via JSON/RSS/API; safe read-first market research."
+  },
+  {
+    "path": "social-media/x-content-optimization",
+    "description": "Optimize X/Twitter content placement in the For You feed based on the open-sourced x-algorithm"
+  },
+  {
+    "path": "social-media/xurl",
+    "description": "Interact with X/Twitter via xurl, the official X API CLI. Use for posting, replying, quoting, searching, timelines, mentions, likes, reposts, bookmarks, follows, DMs, media upload, raw v2 endpoint access, and product-safe research of indivi…"
+  },
+  {
+    "path": "software-development/browse-cli",
+    "description": "Use when an agent needs opt-in Browse CLI guidance for local, non-sensitive browser automation reconnaissance after Hermes built-in browser tools are insufficient."
+  },
+  {
+    "path": "software-development/browser-harness",
+    "description": "Direct browser control via CDP connected to the user's real Chrome. Use when the user wants to automate, scrape, test, or interact with web pages. Installed at ~/Developer/browser-harness."
+  },
+  {
+    "path": "software-development/codex-implementation-orchestration",
+    "description": "Use Codex as a bulk coding worker while Hermes acts as reviewer, verifier, and safety gate for multi-phase implementation work. In Kanban contexts, assign the task to a real accountable agent-system profile (for example Chagatai) and have t…"
+  },
+  {
+    "path": "software-development/debugging-hermes-tui-commands",
+    "description": "Debug Hermes slash commands across Python registry, gateway/[REDACTED], TUI, and Ink UI."
+  },
+  {
+    "path": "software-development/hermes-agent-skill-authoring",
+    "description": "Author in-repo SKILL.md: frontmatter, validator, structure."
+  },
+  {
+    "path": "software-development/hermes-s6-container-supervision",
+    "description": "Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image — adding new services, debugging profile gateways, understanding the Architecture B main-program pattern."
+  },
+  {
+    "path": "software-development/node-inspect-debugger",
+    "description": "Debug Node.js via --inspect + Chrome DevTools Protocol CLI."
+  },
+  {
+    "path": "software-development/product-screening-recovery",
+    "description": "Metadata receipt pattern for Hermes screened tool events."
+  },
+  {
+    "path": "software-development/plan",
+    "description": "Plan mode: write markdown plan to .hermes/plans/, no exec."
+  },
+  {
+    "path": "software-development/python-debugpy",
+    "description": "Debug Python: pdb REPL + debugpy remote (DAP)."
+  },
+  {
+    "path": "software-development/recursive-mode",
+    "description": "Repository workflow orchestration skill for staged implementation, locked artifacts, late-phase receipts, and durable memory maintenance. Use when executing recursive-mode runs, resuming a run, locking a phase, or verifying locks."
+  },
+  {
+    "path": "software-development/requesting-code-review",
+    "description": "Pre-commit review: security scan, quality gates, auto-fix."
+  },
+  {
+    "path": "software-development/shell-command-hygiene",
+    "description": "Write shell commands that don't trip Hermes's own security scanner. Avoid pipe-to-interpreter patterns and inline `-c` script execution when a direct-file read works."
+  },
+  {
+    "path": "software-development/spike",
+    "description": "Throwaway experiments to validate an idea before build."
+  },
+  {
+    "path": "software-development/static-site-live-data-deployment",
+    "description": "Wire, deploy, and verify live-data ingestion for static/SPAs that consume JSON snapshots or SSE-style live endpoints."
+  },
+  {
+    "path": "software-development/subagent-driven-development",
+    "description": "Execute plans via delegate_task subagents (2-stage review)."
+  },
+  {
+    "path": "software-development/systematic-debugging",
+    "description": "4-phase root cause debugging: understand bugs before fixing."
+  },
+  {
+    "path": "software-development/test-driven-development",
+    "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code."
+  },
+  {
+    "path": "software-development/writing-plans",
+    "description": "Use when you have a spec or requirements for a multi-step task. Creates comprehensive implementation plans with bite-sized tasks, exact file paths, and complete code examples."
+  },
+  {
+    "path": "system/hermes-model-switch",
+    "description": "Switch the Hermes default model/provider configuration safely, with backup, guarded config editing, gateway restart, verification, and optional scheduled revert. No secrets in output."
+  },
+  {
+    "path": "system/meta-harness-operations",
+    "description": "Operate the meta-harness control plane: curator gate/co-judge behavior, harness controls, read-only evaluation mode, and operator safety boundaries."
+  },
+  {
+    "path": "yuanbao",
+    "description": "[REDACTED]"
+  }
+]

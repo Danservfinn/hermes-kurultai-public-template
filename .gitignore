@@ -1,0 +1,42 @@
+# Never commit live Hermes/Brain state
+.hermes/
+.hermes-*/
+brain-live/
+brain-private/
+hard-private/
+raw/private/
+
+# Secrets and auth
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.p8
+*.token
+*token*.json
+*auth*.json
+*credential*.json
+*secret*.json
+cookies*.txt
+
+# Runtime state
+*.db
+*.sqlite
+*.sqlite3
+*.session
+*.log
+sessions/
+checkpoints/
+cache/
+state/
+processes.json
+channel_directory.json
+gateway_state.json
+
+# OS/tooling
+.DS_Store
+__pycache__/
+.pytest_cache/

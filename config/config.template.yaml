@@ -1,0 +1,32 @@
+# Safe Hermes configuration template for a replicated setup.
+# Copy to $HERMES_HOME/config.yaml and fill local values outside git.
+model: gpt-5.5
+providers:
+  default: openai-codex
+approvals:
+  mode: request
+security:
+  redact_tool_outputs: true
+  protect_secrets: true
+privacy:
+  public_repo_boundary: templates-manifests-runbooks-only
+terminal:
+  backend: docker
+  docker_mount_cwd_to_workspace: false
+  docker_forward_env: []
+cron:
+  enabled: false
+  require_explicit_delivery: true
+kanban:
+  enabled: true
+  auto_dispatch: false
+delegation:
+  max_concurrent_children: 3
+mcp_servers: {}
+telegram:
+  enabled: false
+gateway:
+  enabled: false
+skills:
+  load_paths:
+    - skills

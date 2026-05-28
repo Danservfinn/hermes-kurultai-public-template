@@ -1,0 +1,325 @@
+agi:
+  local_models:
+    advisory: false
+    enabled: false
+    fallback:
+      wake_frontier_on_low_confidence_below: 0.72
+      wake_frontier_on_safety_label: true
+      wake_frontier_on_validation_error: true
+    local_first_low_risk: false
+    multimodal:
+      chat_endpoint: http://127.0.0.1:18081/v1/chat/completions
+      max_image_bytes: 6000000
+      model: unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL
+      provider: llama_cpp
+      timeout_seconds: 8
+    shadow: false
+    text:
+      chat_endpoint: http://127.0.0.1:18080/v1/chat/completions
+      completion_endpoint: http://127.0.0.1:18080/completion
+      max_prompt_chars: 12000
+      model: unsloth/gpt-oss-20b-GGUF:UD-Q4_K_XL
+      provider: llama_cpp
+      timeout_seconds: 30
+approvals:
+  cron_mode: approve
+  destructive_slash_confirm: false
+  mcp_reload_confirm: true
+  mode: smart
+  timeout: 60
+autonomy:
+  audit_required: true
+  default_mode: unrestricted
+  mode: unrestricted
+  pre_review: false
+  rollback_snapshots: true
+browser:
+  allow_private_urls: false
+  auto_local_for_private_urls: true
+  camofox:
+    adopt_existing_tab: false
+    managed_persistence: false
+    session_key: '[REDACTED]'
+    user_id: ''
+  cdp_url: '[REDACTED]'
+  command_timeout: 30
+  dialog_policy: must_respond
+  dialog_timeout_s: 300
+  engine: auto
+  inactivity_timeout: 120
+  record_sessions: false
+compression:
+  abort_on_summary_failure: false
+  enabled: true
+  hygiene_hard_message_limit: 400
+  protect_first_n: 3
+  protect_last_n: 20
+  target_ratio: 0.2
+  threshold: 0.2
+context:
+  engine: compressor
+context_governor:
+  dry_run: false
+  enabled: true
+  log_decisions: true
+  max_compaction_block_chars: 2000
+  max_history_messages: 80
+  max_tool_result_chars: 4000
+  platforms:
+  - '[REDACTED]'
+  preserve_recent_messages: 24
+cron:
+  max_parallel_jobs: null
+  wrap_response: true
+curator:
+  archive_after_days: 90
+  backup:
+    enabled: true
+    keep: 5
+  enabled: true
+  interval_hours: 168
+  min_idle_hours: 2
+  stale_after_days: 30
+custom_providers:
+- api_key: '[REDACTED]'
+  api_mode: '[REDACTED]'
+  base_url: '[REDACTED]'
+  name: bailian
+- api_key: '[REDACTED]'
+  api_mode: '[REDACTED]'
+  base_url: '[REDACTED]'
+  name: local
+- api_key: '[REDACTED]'
+  api_mode: '[REDACTED]'
+  base_url: '[REDACTED]'
+  name: ollama
+- api_key: '[REDACTED]'
+  api_mode: '[REDACTED]'
+  base_url: '[REDACTED]'
+  name: zai
+- api_key: '[REDACTED]'
+  api_mode: '[REDACTED]'
+  base_url: '[REDACTED]'
+  name: zai-coding
+dashboard:
+  show_token_analytics: false
+  theme: cyberpunk
+delegation:
+  api_key: '[REDACTED]'
+  api_mode: '[REDACTED]'
+  base_url: '[REDACTED]'
+  child_timeout_seconds: 600
+  inherit_mcp_toolsets: true
+  max_concurrent_children: 3
+  max_iterations: 50
+  max_spawn_depth: 1
+  model: ''
+  orchestrator_enabled: true
+  provider: ''
+  reasoning_effort: ''
+  subagent_auto_approve: false
+fallback_providers:
+- model: glm-5.1
+  provider: zai-coding
+gateway:
+  media_delivery_allow_dirs: []
+  trust_recent_files: true
+  trust_recent_files_seconds: 600
+generated_at: '2026-05-28T18:07:58Z'
+goals:
+  max_turns: 20
+hooks: {}
+kanban:
+  auto_decompose: true
+  auto_decompose_per_tick: 3
+  default_assignee: operator-profile
+  dispatch_in_gateway: true
+  dispatch_interval_seconds: 60
+  dispatch_stale_timeout_seconds: 14400
+  failure_limit: 2
+  orchestrator_profile: ogedei
+  worker_log_backup_count: 1
+  worker_log_rotate_bytes: 2097152
+manifest_note: Sanitized structural snapshot generated from a live Hermes home. Values
+  that can identify accounts, routes, secrets, or people are redacted/placeheld.
+mcp_servers:
+  linear:
+    auth: '[REDACTED]'
+    enabled: true
+    url: '[REDACTED]'
+memory:
+  memory_char_limit: 2200
+  memory_enabled: true
+  provider: ''
+  user_char_limit: 1375
+  user_profile_enabled: true
+model:
+  base_url: '[REDACTED]'
+  context_length: 1000000
+  default: gpt-5.5
+  max_tokens: 8192
+  provider: openai-codex
+platform_toolsets:
+  cli:
+  - browser
+  - clarify
+  - code_execution
+  - computer_use
+  - cronjob
+  - delegation
+  - file
+  - image_gen
+  - kanban
+  - memory
+  - messaging
+  - session_search
+  - skills
+  - terminal
+  - todo
+  - tts
+  - vision
+  - web
+  - x_search
+plugins:
+  disabled: []
+  enabled:
+  - batu-research-intake
+  - image_gen/openai
+  - image_gen/openai-codex
+privacy:
+  redact_pii: false
+providers: {}
+security:
+  acked_advisories: []
+  allow_lazy_installs: true
+  allow_private_urls: false
+  parse_screening:
+    auth: '[REDACTED]'
+    base_url: '[REDACTED]'
+    boundary_mode: risk-gated
+    enabled: true
+    fail_closed: false
+    max_usdc: '0.02'
+    mode: paid
+    output_enabled: true
+    prompt_enabled: true
+    timeout_seconds: 20
+    tool_result_enabled: true
+    x402_enabled: true
+  redact_secrets: true
+  tirith_enabled: true
+  tirith_fail_open: true
+  tirith_path: tirith
+  tirith_timeout: 5
+  website_blocklist:
+    domains: []
+    enabled: false
+    shared_files: []
+skills:
+  external_dirs: []
+  guard_agent_created: false
+  inline_shell: false
+  inline_shell_timeout: 10
+  template_vars: true
+stt:
+  enabled: true
+  local:
+    language: ''
+    model: base
+  mistral:
+    model: voxtral-mini-latest
+  openai:
+    model: whisper-1
+  provider: local
+telegram:
+  allowed_chats: ''
+  bot_bridge:
+    ack_addressed: true
+    ack_capture_all: false
+    allowed_commands:
+    - intake_create
+    allowed_peer_bots:
+    - EllipticConstantineBot
+    capture_all: false
+    dm_policy: allowed_operator_dms
+    enabled: true
+    max_attachments: 0
+    max_depth: 1
+    max_payload_chars: 4000
+    mode: intake_only
+  channel_prompts: {}
+  reactions: false
+  require_mention: true
+terminal:
+  auto_source_bashrc: true
+  backend: local
+  container_cpu: 1
+  container_disk: 51200
+  container_memory: 5120
+  container_persistent: true
+  cwd: .
+  daytona_image: nikolaik/python-nodejs:python3.11-nodejs20
+  docker_env: {}
+  docker_extra_args: []
+  docker_forward_env: []
+  docker_image: nikolaik/python-nodejs:python3.11-nodejs20
+  docker_mount_cwd_to_workspace: false
+  docker_run_as_host_user: false
+  docker_volumes: []
+  env_passthrough: []
+  modal_image: nikolaik/python-nodejs:python3.11-nodejs20
+  modal_mode: auto
+  persistent_shell: true
+  shell_init_files: []
+  singularity_image: docker://nikolaik/python-nodejs:python3.11-nodejs20
+  timeout: 180
+  vercel_runtime: node24
+toolsets:
+- hermes-cli
+tts:
+  edge:
+    voice: en-US-AriaNeural
+  elevenlabs:
+    model_id: eleven_multilingual_v2
+    voice_id: pNInz6obpgDQGcFmaJgB
+  mistral:
+    model: voxtral-mini-tts-2603
+    voice_id: c69964a6-ab8b-4f8a-9465-ec0925096ec8
+  neutts:
+    device: cpu
+    model: neuphonic/neutts-air-q4-gguf
+    ref_audio: ''
+    ref_text: ''
+  openai:
+    model: gpt-4o-mini-tts
+    voice: alloy
+  piper:
+    voice: en_US-lessac-medium
+  provider: fish-marcus
+  providers:
+    fish-marcus:
+      command: python3.14 ${HOME}/.hermes/scripts/fish_audio_tts.py --input {input_path}
+        --output {output_path} --voice {voice} --model {model} --format {format}
+      max_text_length: 5000
+      model: s2-pro
+      output_format: mp3
+      timeout_seconds: 120
+      type: command
+      voice: 8bed0e9b444046e2bf72da4b251d9a1d
+      voice_compatible: true
+  xai:
+    bit_rate: 128000
+    language: en
+    sample_rate: 24000
+    voice_id: eve
+voice:
+  auto_tts: false
+  beep_enabled: true
+  max_recording_seconds: 120
+  record_key: '[REDACTED]'
+  silence_duration: 3
+  silence_threshold: 200
+web:
+  backend: ''
+  extract_backend: ''
+  search_backend: ''
