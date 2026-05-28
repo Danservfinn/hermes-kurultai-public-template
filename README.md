@@ -1,4 +1,12 @@
-# Hermes Kurultai Public Template
+# Moved: Kurultai
+
+The canonical public repo is now **Kurultai**:
+
+https://github.com/Danservfinn/kurultai
+
+This repository remains only as a compatibility pointer for the initial public-template experiment. Use `Danservfinn/kurultai` for the full Hermes/Kurultai replica contract, Brain/wiki schema, manifests, bootstrap scripts, validation, and ongoing updates.
+
+---
 
 A public, rebuildable template for a full Hermes-based personal/organizational agent setup: multi-profile agents, Kanban coordination, cron continuity, tool policy, skills, Brain/wiki memory, recovery/receipts, and deployment-safe runbooks.
 
